@@ -5,6 +5,32 @@
     margin: 0;
 }
 
+@font-face 
+
+{
+	font-family: raleway;
+	src:
+	url('RalewayPolice/Raleway-SemiBold.ttf'),
+	url('RalewayPolice/Raleway-ThinItalic.ttf'), 
+	url('RalewayPolice/Raleway-ExtraLightItalic.ttf'),
+	url('RalewayPolice/Raleway-Italic.ttf'),
+	url('RalewayPolice/Raleway-SemiBoldItalic.ttf'),
+	url('RalewayPolice/Raleway-MediumItalic.ttf'),
+	url('RalewayPolice/Raleway-ExtraBoldItalic.ttf'),
+	url('RalewayPolice/Raleway-BoldItalic.ttf'),
+	url('RalewayPolice/Raleway-BlackItalic.ttf'),
+	url('RalewayPolice/Raleway-LightItalic.ttf'),
+	url('RalewayPolice/Raleway-ExtraLight.ttf'),
+	url('RalewayPolice/Raleway-Thin.ttf'),
+	url('RalewayPolice/Raleway-ExtraBold.ttf'),
+	url('RalewayPolice/Raleway-Regular.ttf'),
+	url('RalewayPolice/Raleway-Bold.ttf'),
+	url('RalewayPolice/Raleway-Medium.ttf'),
+	url('RalewayPolice/Raleway-SemiBold.ttf'),
+	url('RalewayPolice/Raleway-Black.ttf'),
+	url('RalewayPolice/Raleway-Light.ttf');
+}
+
 #bloc_page
 
 {
@@ -28,18 +54,24 @@ h1
 
 {
 	font-size: 1.50em;
+	font-style: normal;
+	font-weight: bold;
 }
 
 h2
 
 {
 	font-size: 1.30em;
+	font-style: normal;
+	font-weight: bold;
 }
 
 h3
 
 {
 	font-size: 1.20em;
+	font-style: normal;
+	font-weight: bold;
 }
 
 p
@@ -110,6 +142,12 @@ ul, .nav1
 
 {
 	display: flex;
+}
+
+.nav2
+
+{
+	display: none;
 }
 
 .inscrire1
@@ -700,18 +738,35 @@ footer a
 		color: #0065FC;
 	}
 
-	nav
-	{
-		margin-bottom: 0.5em;
-	}
+
 
 	.nav1
 	{
-		display: flex;
-		justify-content: space-between;
+		display: none;
 	}
 
-	.nav1 a:hover
+	.nav2
+	{
+		display: contents;
+		text-decoration: none;
+		width: 100%;
+	}
+
+	.nav2
+	{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 1em 4em -0.5em 2.5em;
+	}
+
+	.nav2 a
+	{
+		text-decoration: none;
+		color: black;
+	}
+
+	.nav2 a:hover
 	{
 		border-top: none;
 		border-bottom: 3px solid #0065FC;
