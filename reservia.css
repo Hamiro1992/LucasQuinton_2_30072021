@@ -197,7 +197,7 @@ button
 .map
 
 {
-	padding: 1.05em 1.5em 1.25em 1.5em;
+	padding: 1.10em 1.5em 1.25em 1.5em;
 	border: none;
 	background-color: #F2F2F2;
 	border-radius: 15px 0px 0px 15px;
@@ -258,7 +258,7 @@ button
 	background-color: #DEEBFF;
 	border-radius: 50%;
 	margin: -1em 0.8em -1em -0.2em;
-	padding: 1em 2em 2.1em 1.05em;
+	padding: 1.05em 2.05em 2.1em 1.05em;
 }
 
 .filtres1
@@ -694,20 +694,13 @@ footer a
 	width: 30%;
 }
 
-@media screen and (max-width: 1023px)
+@media screen and (max-width: 1150px)
 
 {
 	#bloc_page
 	{
 		width: 100%;
 		margin: auto;
-	}
-
-	header
-	{
-		margin-bottom: 2em;
-		padding-bottom: 0.5em;
-		border-bottom: 3px solid #F2F2F2;
 	}
 
 	#logo
@@ -746,23 +739,33 @@ footer a
 	.nav2
 	{
 		display: contents;
+		display: flex;
+		flex-direction: row;
 		text-decoration: none;
 		width: 100%;
 		padding-bottom: 1em;
-	}
-
-	.nav2
-	{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		margin: 1em 4em -0.5em 2.5em;
+		margin-top: 1em;
 	}
 
 	.nav2 a
 	{
 		text-decoration: none;
 		color: black;
+		width: 100%;
+		border-bottom: 3px solid #F2F2F2;
+		padding-bottom: 1em;
+		margin-bottom: -0.5em;
+	}
+
+	.nav2H
+	{
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+
+	.nav2A
+	{
+		padding-left: 18%;
 	}
 
 	.nav2 a:hover
@@ -770,12 +773,16 @@ footer a
 		border-top: none;
 		border-bottom: 3px solid #0065FC;
 		color: #0065FC;
-		padding-bottom: 1em;
 	}
 
 	.rechercher
 	{
 		margin-left: 1em;
+	}
+
+	.rechercher p
+	{
+		margin-bottom: 1.5em;
 	}
 
 	.recherche1
@@ -804,6 +811,11 @@ footer a
 		width: 80%;
 	}
 
+	.map
+	{
+		padding-top: 1.05em;
+	}
+
 	.filtres
 	{
 		flex-wrap: wrap;
@@ -813,6 +825,22 @@ footer a
 	.filtres1
 	{
 		width: 100%;
+	}
+
+	.filtres1 h2
+	{
+		font-size: 1.20em;
+	}
+
+	.filtres2 h3
+	{
+		font-size: 1em;
+		margin: -0.1em;
+	}
+
+	.filtres i
+	{
+		font-size: 1.05em;
 	}
 
 	.info
