@@ -128,7 +128,7 @@ nav li
     margin-left: 1em;
 }
 
-nav a
+nav ul a
 
 {
 	padding: 2em;
@@ -136,7 +136,7 @@ nav a
 	color: black;
 }
 
-nav a:hover 
+nav ul a:hover 
 
 {
 	padding-top: 2.5em;
@@ -173,7 +173,7 @@ nav ul
 .rechercher p
 
 {
-	padding-top: 0.5em;
+	padding: 0.5em 0 0.5em 0;
 }
 
 input
@@ -494,7 +494,7 @@ button
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 0 2em 0.5em 1em;
+	padding: 1em 2em 0.5em 1em;
 }
 
 #populaires h1
@@ -778,7 +778,6 @@ footer a
 
 	.nav2 a:hover
 	{
-		border-top: none;
 		border-bottom: 3px solid #0065FC;
 		color: #0065FC;
 	}
