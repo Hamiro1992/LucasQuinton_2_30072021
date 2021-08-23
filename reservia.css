@@ -22,6 +22,13 @@ figure
 	max-width: 500px;
 }
 
+figure:hover
+
+{
+	transform: scale(1.05);
+	transition: 0.3s ease-in-out;
+}
+
 a
 
 {
@@ -96,22 +103,6 @@ header /* Logo + nav */
     height: auto;
 }
 
-/* Bouton inscrire et nav pour version inférieur à 1080 px */
-
-.inscrire2
-
-{
-	display: none;
-}
-
-.nav2
-
-{
-	display: none;
-}
-
-/* Fin */
-
 /* Nav + bouton inscrire pour version supérieur à 1080 px */
 
 nav ul
@@ -147,6 +138,40 @@ nav li a:hover
 {
 	font-weight: bold;
 	color: #0065FC;
+}
+
+.inscrire1
+
+{
+	padding: 1.1em;
+	margin: 1em;
+}
+
+.inscrire1:hover
+
+{
+	box-sizing: border-box;
+	width: 100%;
+	border: solid #0065FC 2px;
+	border-radius: 100px;
+	padding: 1em;
+	background-color: #DEEBFF;
+}
+
+/* Fin */
+
+/* Bouton inscrire et nav pour version inférieur à 1080 px */
+
+.inscrire2
+
+{
+	display: none;
+}
+
+.nav2
+
+{
+	display: none;
 }
 
 /* Fin */
@@ -186,6 +211,7 @@ button
 	padding: 1em;
 	margin: 1em 1em 0 0;
 	font-size: 1em;
+	font-weight: bold;
 	border: none;
 	color: white;
 	background-color: #0065FC;
@@ -420,7 +446,7 @@ input
 	padding-top: 1em;
 }
 
-.img_hebergements img
+#hebergements img
 
 {
 	width: 100%;
@@ -601,6 +627,12 @@ footer
 	width: 30%;
 }
 
+.footer1 a:hover 
+
+{
+	text-decoration: underline;
+}
+
 footer h2
 
 {
@@ -615,7 +647,7 @@ footer p
 
 /* Fin */
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1120px)
 
 {
 	#bloc_page
